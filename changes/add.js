@@ -25,9 +25,8 @@ async function postCard() {
         "front": frontRef.textContent,
         "back": backRef.textContent,
     }
-
-    console.log(newCard);
-    let url = "http://localhost:3000/add";
+    
+    let url = "https://fast-shelf-28098.herokuapp.com/add";
     let options = {
         headers: {
             "Content-Type": "application/json"

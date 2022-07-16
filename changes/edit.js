@@ -28,7 +28,7 @@ async function patchCard() {
     card.back = backRef.textContent;
 
     console.log(card);
-    let url = "http://localhost:3000/edit";
+    let url = "https://fast-shelf-28098.herokuapp.com/edit";
     let options = {
         headers: {
             "Content-Type": "application/json"
