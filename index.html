@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Cards</title>
+
+    <!--font awesome icons-->
+    <script src="https://kit.fontawesome.com/a9cb9ea5d5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="center">
+        <div class="controls" id="left"><button><i class="fa-solid fa-chevron-left fa-2xl"></i></button></div>
+        <div class="card-container">
+            <div class="card">
+                <div class="front">
+                    <h1></h1>
+                </div>
+                <div class="back">
+                    <h1></h1>
+                </div>
+            </div>
+        </div>
+        <div class="controls" id="right"><button><i class="fa-solid fa-chevron-right fa-2xl"></i></button></div>
+    </div>
+
+    <div class="crudOps">
+        <div class="crud"><a href="./changes/edit.html" id="editBtn"><button><i class="fa-solid fa-pen-to-square fa-2xl"></i></button></a></div>
+        <div class="crud"><a href="./changes/add.html" id="addBtn"><button><i class="fa-solid fa-plus fa-2xl"></i></button></a></div>
+        <div class="crud"><button id="deleteBtn"><i class="fa-solid fa-trash fa-2xl"></i></button></div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
