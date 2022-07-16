@@ -13,6 +13,15 @@ const backRef = document.querySelector(".back h1");
 frontRef.textContent = "Add Front content here";
 backRef.textContent = "Back Content";
 
+// on discard, reload the main page
+const discardBtn = document.querySelector("#discardBtn");
+discardBtn.addEventListener("click", reloadMainPage);
+
+function reloadMainPage() {
+    let href = "./../index.html";
+    location.assign(href);
+}
+
 // on save, send a POST request to API
 const saveBtn = document.querySelector("#saveBtn");
 saveBtn.addEventListener('click', postCard);
@@ -35,6 +44,6 @@ async function postCard() {
         body: JSON.stringify(newCard)
     }
 
-    await fetch(url, options)
-    window.location.href = hrefToRedirect;
+    await fetch(url, options);
+    reloadMainPage();
 }

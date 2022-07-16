@@ -16,13 +16,22 @@ let card = JSON.parse(localStorage.getItem('card'));
 frontRef.textContent = card.front;
 backRef.textContent = card.back;
 
+const discardBtn = document.querySelector("#discardBtn");
+discardBtn.addEventListener("click", reloadMainPage);
+
+function reloadMainPage() {
+    localStorage.removeItem("card");
+    let href = "./../index.html";
+    location.assign(href);
+}
+
 // on save, send a PATCH request to API
 const saveBtn = document.querySelector("#saveBtn");
 saveBtn.addEventListener("click", patchCard);
 
 // send patch request, then redirect to index.html
 async function patchCard() {
-    let hrefToRedirect = saveBtn.getAttribute("href");
+    // let hrefToRedirect = saveBtn.getAttribute("href");
 
     card.front = frontRef.textContent;
     card.back = backRef.textContent;
@@ -38,6 +47,5 @@ async function patchCard() {
     }
 
     await fetch(url, options);
-    localStorage.removeItem('card');
-    window.location.href = hrefToRedirect;
+    reloadMainPage();
 }
