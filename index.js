@@ -77,8 +77,7 @@ function setCardInLocalStorage() {
     let href = editbtn.getAttribute("href");
 
     localStorage.setItem('card', JSON.stringify(cards[i]));
-
-    window.location.href = href;
+    location.assign(href);
 }
 
 // delete the card from database and also from cards array

@@ -9,7 +9,7 @@ body {
 
 .center {
     margin: 100px auto 50px;
-    width: 500px;
+    width: 600px;
     height: 50%;
 
     display: flex;
@@ -32,12 +32,17 @@ button {
     background-color: transparent;
 }
 
+.crud:hover {
+    background-color: antiquewhite;
+}
+
 .card-container {
-    width: 300px;
+    width: 400px;
     height: 100%;
 }
 
 .card {
+    box-shadow: 0 4px 8px 2px rgb(0 0 0 / 50%), 0 6px 20px 1px rgb(0 0 0 / 20%);
     height: 100%;
 
     transition-property: transform;
@@ -90,4 +95,16 @@ button {
 
 a {
     color: black;
+}
+
+#deleteBtn {
+    color: red;
+}
+
+#addBtn button {
+    color: green;
+}
+
+#editBtn button {
+    color: blue;
 }
