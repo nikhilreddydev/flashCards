@@ -70,6 +70,9 @@ button {
 .front h1, .back h1 {
     word-wrap: break-word;
     max-width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    line-height: 1.5;
 }
 
 .back {
@@ -87,10 +90,10 @@ button {
 }
 
 .crudOps {
-    width: 500px;
+    width: 400px;
     margin: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 a {

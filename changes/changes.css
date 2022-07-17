@@ -57,6 +57,16 @@ body {
     transform: rotateY(180deg);
 }
 
+.controls {
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly   ;
+}
+
 [contenteditable]:focus {
     outline: 0px solid transparent;
+}
+
+[contenteditable=true]:empty:not(:focus):before {
+    content: attr(data-text);
 }

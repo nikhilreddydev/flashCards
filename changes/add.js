@@ -10,8 +10,8 @@ function flip() {
 const frontRef = document.querySelector(".front h1");
 const backRef = document.querySelector(".back h1");
 
-frontRef.textContent = "Add Front content here";
-backRef.textContent = "Back Content";
+frontRef.textContent = "Front";
+backRef.textContent = "Back";
 
 // on discard, reload the main page
 const discardBtn = document.querySelector("#discardBtn");

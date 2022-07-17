@@ -22,6 +22,8 @@ function loadCards() {
         .then(data => {
             cards = data;
             i = 0;
+            if(flipped)
+                flip();
             setCardContent(cards, i);
         });
 }
@@ -85,7 +87,6 @@ const deleteBtn = document.querySelector("#deleteBtn");
 deleteBtn.addEventListener("click", deleteCard);
 
 async function deleteCard() {
-
     let url = "https://fast-shelf-28098.herokuapp.com/delete"
     let options = {
         headers: {
