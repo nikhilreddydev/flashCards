@@ -35,7 +35,7 @@ async function postCard() {
         "back": backRef.textContent,
     }
     
-    let url = "https://fast-shelf-28098.herokuapp.com/add";
+    let url = "https://cute-cyan-lemur-cap.cyclic.app/add";
     let options = {
         headers: {
             "Content-Type": "application/json"
