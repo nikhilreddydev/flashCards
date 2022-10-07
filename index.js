@@ -16,7 +16,7 @@ let i;
 loadCards();
 
 function loadCards() {
-    let url = "https://drab-tan-marlin-shoe.cyclic.app/";
+    let url = "https://healthy-ruby-goshawk.cyclic.app/";
     fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -87,7 +87,7 @@ const deleteBtn = document.querySelector("#deleteBtn");
 deleteBtn.addEventListener("click", deleteCard);
 
 async function deleteCard() {
-    let url = "https://drab-tan-marlin-shoe.cyclic.app/delete"
+    let url = "https://healthy-ruby-goshawk.cyclic.app/delete"
     let options = {
         headers: {
             "Content-Type": "application/json",
