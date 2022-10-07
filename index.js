@@ -16,7 +16,7 @@ let i;
 loadCards();
 
 function loadCards() {
-    let url = "https://fast-shelf-28098.herokuapp.com/";
+    let url = "https://drab-tan-marlin-shoe.cyclic.app/";
     fetch(url)
         .then(res => res.json())
         .then(data => {
@@ -87,7 +87,7 @@ const deleteBtn = document.querySelector("#deleteBtn");
 deleteBtn.addEventListener("click", deleteCard);
 
 async function deleteCard() {
-    let url = "https://fast-shelf-28098.herokuapp.com/delete"
+    let url = "https://drab-tan-marlin-shoe.cyclic.app/delete"
     let options = {
         headers: {
             "Content-Type": "application/json",

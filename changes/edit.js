@@ -37,7 +37,7 @@ async function patchCard() {
     card.back = backRef.textContent;
 
     console.log(card);
-    let url = "https://fast-shelf-28098.herokuapp.com/edit";
+    let url = "https://drab-tan-marlin-shoe.cyclic.app/edit";
     let options = {
         headers: {
             "Content-Type": "application/json"
