@@ -35,7 +35,7 @@ async function postCard() {
         "back": backRef.textContent,
     }
     
-    let url = "https://healthy-ruby-goshawk.cyclic.app/add";
+    let url = "https://flashcards.cyclic.app/add";
     let options = {
         headers: {
             "Content-Type": "application/json"
